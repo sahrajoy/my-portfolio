@@ -1,0 +1,11 @@
+.cv {
+  background-color: #c2e7ac;
+}
+.cv h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}/*# sourceMappingURL=cv.component.css.map */

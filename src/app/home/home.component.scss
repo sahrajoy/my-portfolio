@@ -1,0 +1,41 @@
+@import '../../assets/variables';
+
+.hero {
+    padding-top: 170px;
+    background: url('../../assets/hero-bg.png') no-repeat center center;
+    background-size: cover;
+    padding: 65px 0 300px 0;
+    height: auto;
+    h1 {
+        font-size: 40px;
+        letter-spacing: 12px;
+        margin: 10px;
+        span {
+            color: #a1a9b0;
+            display: inline-block;
+        }
+    }
+    p {
+        letter-spacing: 1px;
+    }
+}
+
+.send-mail-btn {
+    text-decoration: none;
+    background: $green-color-light;
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    box-shadow: 0px 3px 0px 0px $green-color-dark;
+    margin: 30px 0 0;
+    font-weight: bold;
+}
+
+.send-mail-btn:hover,
+.send-mail-btn:focus {
+    background: $green-color-hoover;
+    color: #fff;
+}
