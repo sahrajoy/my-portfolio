@@ -39,6 +39,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: fadeInDown;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 button,
 input,
@@ -63,6 +67,11 @@ a:hover {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
 }
 
 p {
@@ -105,20 +114,13 @@ h2::after {
   height: 650px;
 }
 
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
+.wp1,
+.wp2,
+.wp3,
+.wp4,
+.wp5,
+.wp6 {
   visibility: hidden;
-}
-
-.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight {
-  visibility: visible;
-}
-
-.delay-05s {
-  animation-delay: 0.5s;
-}
-
-.delay-1s {
-  animation-delay: 1s;
 }
 
 /* 480px (WVGA - Low End Windows Phone) */

@@ -24,6 +24,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         transform: translateY(0);
     }
 }
+
 .fadeInUp {
     animation-name: fadeInUp;
 }
@@ -40,6 +41,63 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         transform: translateY(0);
     }
 }
+
 .fadeInDown {
     animation-name: fadeInDown;
 }
+
+// @-webkit-keyframes fadeInLeft {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(-20px);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// @keyframes fadeInLeft {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(-20px);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// .fadeInLeft {
+//     animation-name: fadeInLeft;
+// }
+
+// @-webkit-keyframes fadeInRight {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(20px);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// @keyframes fadeInRight {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(20px);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// .fadeInRight {
+//     animation-name: fadeInRight;
+// }

@@ -1,1 +1,33 @@
-/*# sourceMappingURL=footer.component.css.map */
+section {
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  color: white;
+  font-size: x-small;
+}
+section .references {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .references a {
+  text-decoration: none;
+  color: white;
+}
+section .references div {
+  margin: 0 10px;
+}
+section .social-tags {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .social-tags .fa {
+  margin: 5px 5px;
+  font-size: 20px;
+  color: white;
+}/*# sourceMappingURL=footer.component.css.map */

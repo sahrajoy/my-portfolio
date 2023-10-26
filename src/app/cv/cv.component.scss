@@ -1,13 +1,45 @@
 @import '../../assets/variables';
 
-.cv{
-    background-color: $green-color-background;
-    h1{
+#cv {
+    background-color: $green-medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .lifeline-dot {
+        height: 100px;
+        width: 2px;
+        border-left: 2px dotted $grey-light;
+    }
+    .content[data-aos="fade-right"] {
+        margin-right: 30%;
+    }
+    .content[data-aos="fade-left"] {
+        margin-left: 30%;
+    }
+    
+    .content{
+        max-width: 40%;   
+        background-color: white;
+        h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: $grey-dark;
+            letter-spacing: 1px;
+            padding-bottom: 30px;
+            font-weight: bold;
+        }
+
+        p {
+            color: $grey-dark;
+        }
+    }
+
+    h1 {
         font-size: 15px;
         text-transform: uppercase;
-        color: #353535;
+        color: $grey-dark;
         letter-spacing: 1px;
-       padding-bottom: 30px;
+        padding-bottom: 30px;
         font-weight: bold;
     }
 }

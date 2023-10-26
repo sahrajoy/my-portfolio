@@ -1,7 +1,36 @@
-.cv {
-  background-color: #c2e7ac;
+#cv {
+  background-color: #94d76e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.cv h1 {
+#cv .lifeline-dot {
+  height: 100px;
+  width: 2px;
+  border-left: 2px dotted #8c9398;
+}
+#cv .content[data-aos=fade-right] {
+  margin-right: 30%;
+}
+#cv .content[data-aos=fade-left] {
+  margin-left: 30%;
+}
+#cv .content {
+  max-width: 40%;
+  background-color: white;
+}
+#cv .content h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+#cv .content p {
+  color: #353535;
+}
+#cv h1 {
   font-size: 15px;
   text-transform: uppercase;
   color: #353535;

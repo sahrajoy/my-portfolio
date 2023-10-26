@@ -22,20 +22,20 @@
 
 .send-mail-btn {
     text-decoration: none;
-    background: $green-color-light;
+    background: $green-light;
     padding: 20px 40px;
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
-    box-shadow: 0px 3px 0px 0px $green-color-dark;
+    box-shadow: 0px 3px 0px 0px $green-dark;
     margin: 30px 0 0;
     font-weight: bold;
 }
 
 .send-mail-btn:hover,
 .send-mail-btn:focus {
-    background: $green-color-hoover;
+    background: $green-medium;
     color: #fff;
 }
