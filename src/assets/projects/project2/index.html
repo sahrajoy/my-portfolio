@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly planner</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-0" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyPlanner</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tasks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+        <!-- message icon -->
+        <i class="fa">&#xf0f3;</i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero section -->
+    <div id="hero">
+      <div id="overlay">Weekly planner</div>
+    </div>
+    <div class="container">
+      <!-- sort -->
+      <div id="sort">
+        <div class="h2">Weekly tasks</div>
+        <button id="sort-button">Sort by priority: <i class="fa fa-sort-amount-asc"></i></button>
+      </div>
+      <!-- tasks area -->
+      <div class="task-area">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-xs-1" id="result">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="icons">
+      <a href="https://www.facebook.com/" class="social-tags"><i class="fa">&#xf09a;</i></a>
+      <a href="twitter" class="social-tags"><i class="fa">&#xf099;</i></a>
+      <a href="google" class="social-tags"><i class="fa">&#xf1a0;</i></a>
+      <a href="Instagram" class="social-tags"><i class="fa">&#xf16d;</i></a>
+      <a href="Instagram" class="social-tags"><i class="fa">&#xf16d;</i></a>
+      <a href="https://www.linkedin.com/feed/" class="social-tags"><i class="fa">&#xf0e1;</i></a>
+      <a href="https://github.com/" class="social-tags"><i class="fa">&#xf09b;</i></a>
+    </div>
+    <div id="subscribe">
+      <div id="sign-up-text">Sign up for newsletter</div>
+      <input type="text" id="email-newsletter">
+      <button>Subscribe</button>
+    </div>
+    <div id="copyright">&copy 2023 Copyright SahraJoy</div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+  
+  <!-- Bootstrap CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

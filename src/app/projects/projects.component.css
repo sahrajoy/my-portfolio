@@ -1,1 +1,145 @@
-/*# sourceMappingURL=projects.component.css.map */
+.head {
+  background: url("../../assets/plants-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+.head h1 {
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.head .down-arrow-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #64B436;
+  display: inline-block;
+  margin: 10px auto 20px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+.head .down-arrow-btn:hover,
+.head .down-arrow-btn:focus {
+  color: #fff;
+  background: #94d76e;
+}
+
+#projects {
+  margin: 80px 0px;
+  padding-bottom: 5vh;
+  position: relative;
+}
+#projects .carousel-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#projects .carousel-inner .carousel-item {
+  margin: 0px 30px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+#projects .carousel-inner .carousel-item .d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects .carousel-inner .carousel-item .d-flex .slider-element {
+  width: 100%;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #projects .carousel-inner .carousel-item .d-flex .slider-element {
+    width: 33.33%;
+  }
+}
+#projects .carousel-inner .carousel-item .d-flex .slider-element .img {
+  width: 50vh;
+  margin: 3vh;
+  overflow: hidden;
+  position: relative;
+}
+#projects .carousel-inner .carousel-item .d-flex .slider-element .img img {
+  width: 100%;
+  transform: translate3d(-40px, 0, 0);
+}
+#projects .carousel-inner .carousel-item .d-flex .slider-element .overlay {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  background: #94d76e;
+  overflow: hidden;
+  transition: all 0.5s;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#projects .carousel-inner .carousel-item .d-flex .slider-element .overlay .expand {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 30px;
+  left: 0;
+  right: 0;
+  bottom: 47%;
+  margin: 0 auto -30px auto;
+}
+#projects .carousel-inner .carousel-item .d-flex .slider-element .overlay .expand i {
+  font-size: 30px;
+}
+#projects .carousel-inner .carousel-item .d-flex .slider-element .img:hover {
+  transform: translate3d(0, 0, 0);
+}
+#projects .carousel-inner .carousel-item .d-flex .slider-element .img:hover .overlay {
+  height: 100%;
+  opacity: 0.7;
+}
+#projects .carousel-control-prev {
+  filter: invert(100%);
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#projects .carousel-control-next {
+  filter: invert(100%);
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#projects .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #353535;
+}
+#projects .carousel-indicators li ::before {
+  content: "" !important;
+}
+#projects .carousel-indicators .active {
+  background-color: #353535;
+}
+
+@media (max-width: 767px) {
+  .carousel-item {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    width: 33.33%;
+    float: left;
+  }
+}/*# sourceMappingURL=projects.component.css.map */

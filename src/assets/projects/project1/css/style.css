@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  background-color: rgb(241, 241, 241);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo {
+  width: 80px;
+}
+.navbar nav {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin: 0 30px;
+}
+.navbar nav a {
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+}
+
+main .food-menu {
+  background-color: #293133;
+  padding: 4px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  color: white;
+  font-size: small;
+  text-transform: uppercase;
+}
+main .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px 40px;
+}
+main .container .food-container {
+  position: relative;
+}
+main .container .food-container img {
+  width: 100%;
+  height: 100%;
+}
+main .container .food-container div {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(193, 197, 201, 0.7);
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: small;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+@media screen and (max-width: 481px) {
+  main .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  main .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+footer {
+  background-color: #293133;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  color: white;
+  font-size: x-small;
+}
+footer .references {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .references a {
+  text-decoration: none;
+  color: white;
+}
+footer .references div {
+  margin: 0 10px;
+}
+footer .social-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-tags .fa {
+  margin: 5px 5px;
+  font-size: 20px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

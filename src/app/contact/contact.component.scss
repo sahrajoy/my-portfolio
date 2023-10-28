@@ -1,0 +1,71 @@
+@import '../../assets/variables';
+
+#contact {
+    position: relative;
+    background-color: $grey-dark-bg;
+    padding-bottom: 20px;
+
+    .up-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $green-dark;
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px;
+        line-height: 46px;
+        position: absolute;
+        text-align: center;
+        top: -26px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .up-btn:hover,
+    .up-btn:focus {
+        color: #fff;
+        background: $green-medium;
+    }
+
+    .contact-details {
+        margin: 50px 0;
+        
+        .light-box {
+            background-color: #fff;
+            padding: 20px 0;
+            transition: all 500ms ease-in-out;
+
+            h2 {
+                font-size: 20px;
+
+                span {
+                    display: block;
+                    color: $green-light;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+            }
+
+            p {
+                a {
+                    text-decoration: none;
+                    color: $grey-light;
+                    word-spacing: 1px;
+                    line-height: 25px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .light-box:hover,
+        .light-box:focus {
+            box-shadow: 0px 3px 0px 0px #70c93d;
+            transform: translate(0, -15px);
+        }
+    }
+}

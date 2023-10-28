@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+.navbar {
+  background-color: #293133;
+  padding: 1vh 3vh;
+  flex-direction: row;
+}
+.navbar .fa {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+main #hero {
+  height: 500px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #hero #overlay {
+  position: absolute;
+  background-color: #293133;
+  opacity: 0.5;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  width: 15%;
+}
+main .container {
+  margin: 2% 15%;
+}
+main .container #sort {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container #sort #sort-button {
+  font-size: medium;
+  border: none;
+  background: transparent;
+}
+main .container #sort #sort-button .fa {
+  margin-left: 10px;
+}
+
+footer {
+  background-color: #293133;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 0;
+  color: white;
+  font-size: x-small;
+}
+footer #icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+footer #icons .social-tags {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 8px;
+  margin: 0 3px;
+}
+footer #icons .social-tags .fa {
+  font-size: 15px;
+  color: white;
+}
+footer #subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+footer #subscribe #sign-up-text {
+  font-size: small;
+}
+footer #subscribe #email-newsletter {
+  min-width: 450px;
+  height: 30px;
+  border-radius: 3px;
+}
+footer #subscribe button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 9px;
+}
+footer #copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-body .btnImportance .importance {
+  color: white;
+  border-radius: 3px;
+  border: 1px solid none;
+  padding: 4px 8px;
+}/*# sourceMappingURL=style.css.map */

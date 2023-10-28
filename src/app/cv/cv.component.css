@@ -4,10 +4,18 @@
   flex-direction: column;
   align-items: center;
 }
+#cv h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
 #cv .lifeline-dot {
   height: 100px;
   width: 2px;
-  border-left: 2px dotted #8c9398;
+  border-left: 4px dotted white;
 }
 #cv .content[data-aos=fade-right] {
   margin-right: 30%;
@@ -16,25 +24,17 @@
   margin-left: 30%;
 }
 #cv .content {
+  padding: 25px;
   max-width: 40%;
   background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.226);
 }
 #cv .content h3 {
   font-size: 12px;
   text-transform: uppercase;
   color: #353535;
   letter-spacing: 1px;
-  padding-bottom: 30px;
-  font-weight: bold;
-}
-#cv .content p {
-  color: #353535;
-}
-#cv h1 {
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #353535;
-  letter-spacing: 1px;
-  padding-bottom: 30px;
+  padding-bottom: 7px;
   font-weight: bold;
 }/*# sourceMappingURL=cv.component.css.map */

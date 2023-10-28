@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  background-color: rgb(241, 241, 241);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo {
+  width: 80px;
+}
+.navbar nav {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin: 0 30px;
+}
+.navbar nav a {
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+}
+
+main {
+  min-height: 350px;
+}
+main .bar {
+  height: 20px;
+  background-color: #293133;
+  padding: 4px;
+}
+main .container {
+  margin: 10px 40px;
+}
+main .container .about {
+  padding: 30px;
+}
+main .container .about .image {
+  float: left;
+  height: 15rem;
+  width: 20rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: aliceblue;
+  background-image: url("https://media.istockphoto.com/id/974660508/de/foto/frau-stand-zur%C3%BCck-zu-freund.jpg?s=612x612&w=0&k=20&c=ywlVe9tOYoTQ7hxzNZjGy7VOiDL_acH5G_aOdVCWB7Y=");
+  background-size: cover;
+  background-position: center;
+}
+main .container .about h3 {
+  color: #74B72E;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #293133;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  color: white;
+  font-size: x-small;
+}
+footer .references {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .references a {
+  text-decoration: none;
+  color: white;
+}
+footer .references div {
+  margin: 0 10px;
+}
+footer .social-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-tags .fa {
+  margin: 5px 5px;
+  font-size: 20px;
+  color: white;
+}/*# sourceMappingURL=about.css.map */
