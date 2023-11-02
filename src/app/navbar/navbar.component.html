@@ -1,29 +1,28 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- Toggler Icon  -->
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#cv">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Get in Touch</a>
-                </li>
-            </ul>
-        </div>
+<div #nav id="nav" [class.visible]="navVisible">
+    <div class="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about"><span>About</span><span>></span></a>
+                <hr>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#cv"><span>CV</span><span>></span></a>
+                <hr>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills"><span>Skills</span><span>></span></a>
+                <hr>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects"><span>Projects</span><span>></span></a>
+                <hr>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact"><span>Get in Touch</span><span>></span></a>
+            </li>
+        </ul>
     </div>
-</nav>
+</div>
+<div class="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+    <button (click)="toggleNav()" class="btn">X</button>
+</div>

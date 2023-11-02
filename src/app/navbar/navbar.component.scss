@@ -1,0 +1,39 @@
+@import '../../assets/variables';
+
+.btn {
+    float: right;
+}
+
+#nav {
+    // display: none;
+    background-color: $grey-dark;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    
+    overflow: hidden; // prevent content from showing when it's supposed to be hidden
+    max-height: 0;
+    transition: max-height 2s ease-in-out, opacity 1s ease-out, padding 1s ease-in;
+    
+    &.visible {
+        max-height: 500px; // adjust as needed based on the content size
+        opacity: 1;
+        padding: 10px;
+    }
+
+    .col-s-8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-item {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        hr {}
+    }
+}
