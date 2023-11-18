@@ -39,3 +39,30 @@
     background: $green-medium;
     color: #fff;
 }
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+    .hero {
+        padding-top: 170px;
+        background: url('../../assets/hero-bg-small.png') no-repeat center center;
+        background-size: cover;
+        padding: 65px 0 300px 0;
+        height: auto;
+        h1 {
+            font-size: 40px;
+            letter-spacing: 12px;
+            margin: 10px;
+            span {
+                color: #a1a9b0;
+                display: inline-block;
+            }
+        }
+        p {
+            letter-spacing: 1px;
+        }
+    }
+
+    .send-mail-btn {
+        padding: 10px 20px;
+    }
+  }

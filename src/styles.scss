@@ -47,6 +47,13 @@ h2 {
     font-weight: bold;
 }
 
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 18px;
+    }
+}
+
 h2::after {
     content: " ";
     border: solid 2px $green-light;
@@ -67,4 +74,11 @@ h2::after {
     background: url('./assets/h1-bg.png') no-repeat center bottom;
     padding-bottom: 30px;
     font-weight: bold;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+    .h1-arrow {
+        font-size: 20px;
+    }
 }

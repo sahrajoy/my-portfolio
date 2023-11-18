@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h1 {
         font-size: 18px;
         text-transform: uppercase;
@@ -13,33 +14,113 @@
         padding-bottom: 30px;
         font-weight: bold;
     }
+
+    .cvContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .lifeline-dot {
+            height: 100px;
+            width: 2px;
+            border-left: 4px dotted white;
+        }
+
+        .content[data-aos="fade-right"] {
+            margin-right: 30%;
+        }
+
+        .content[data-aos="fade-left"] {
+            margin-left: 30%;
+        }
+
+        .content {
+            padding: 25px;
+            max-width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.226);
+
+            h3 {
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $grey-dark;
+                letter-spacing: 1px;
+                padding-bottom: 7px;
+                font-weight: bold;
+            }
+        }
+    }
+    
     .lifeline-dot {
         height: 100px;
         width: 2px;
         border-left: 4px dotted white;
+        margin-top: 15px;
     }
-    .content[data-aos="fade-right"] {
-        margin-right: 30%;
-    }
-    .content[data-aos="fade-left"] {
-        margin-left: 30%;
-    }
-    
-    .content{
-        padding: 25px;
-        max-width: 40%;   
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.226);
 
-        h3 {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: $grey-dark;
-            letter-spacing: 1px;
-            padding-bottom: 7px;
-            font-weight: bold;
+    .endline{
+        font-size: 18px;
+        color: white;
+        letter-spacing: 1px;
+        padding-top: 30px;
+        font-weight: bold;
+    }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+    #cv {
+        background-color: $green-medium;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 22px;
+            padding-bottom: 20px;
+        }
+
+        .cvContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+
+            .content[data-aos="fade-right"] {
+                margin-right: 30%;
+            }
+
+            .content[data-aos="fade-left"] {
+                margin-left: 30%;
+            }
+
+            .content {
+                padding: 15px;
+                max-width: 70%;
+                a{
+                    text-decoration: none;
+                }
+                h3 {
+                    font-size: medium;
+                    padding-top: 10px;
+                    margin: 0;
+                }
+                p{
+                    padding-top: 10px;
+                    margin: 0;
+                    font-size: medium;
+                }
+            }
+            .lifeline-dot {
+                height: 50px;
+                margin-top: 15px;
+            }
+        }
+
+        .lifeline-dot {
+            height: 50px;
+            margin-top: 15px;
         }
     }
-
 }
