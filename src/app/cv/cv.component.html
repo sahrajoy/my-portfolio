@@ -1,14 +1,15 @@
 <section class="section-padding" id="cv">
     <h1>Experience</h1>
-    <div class="cvContent" *ngFor="let val of cvArr; let i = index">
+    <div class="col-10 cvContent" *ngFor="let val of cvArr; let i = index">
         <!-- For Even Index -->
         <ng-container *ngIf="i % 2 === 0">
             <div class="lifeline-dot" data-aos="fade-up" data-aos-duration="1500"></div>
             <br>
             <div class="content" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="">
                 <a href=""><h3>{{val.title}}</h3></a>
-                <p>{{val.date}}</p>
-                <p>{{val.stack}}</p>
+                <p class="date">{{val.date}}</p>
+                <p class="stack">{{val.stack}}</p>
+                <p class="desc">{{val.description}}</p>
                 <br>
             </div>
         </ng-container>
@@ -18,8 +19,9 @@
             <br>
             <div class="content" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="">
                 <a href=""><h3>{{val.title}}</h3></a>
-                <p>{{val.date}}</p>
-                <p>{{val.stack}}</p>
+                <p class="date">{{val.date}}</p>
+                <p class="stack">{{val.stack}}</p>
+                <p class="desc">{{val.description}}</p>
                 <br>
             </div>
         </ng-container>

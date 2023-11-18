@@ -11,20 +11,14 @@
     align-items: center;
     justify-content: space-around;
     
-    overflow: hidden; // prevent content from showing when it's supposed to be hidden
+    overflow: hidden;
     max-height: 0;
     transition: max-height 2s ease-in-out, opacity 1s ease-out, padding 1s ease-in;
     
     &.visible {
-        max-height: 500px; // adjust as needed based on the content size
+        max-height: 500px;
         opacity: 1;
-        padding: 10px;
-    }
-
-    .col-s-8 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 12px;
     }
 
     .nav-item {
@@ -34,6 +28,55 @@
             justify-content: space-between;
         }
 
-        hr {}
+        hr {
+            margin: 3px 0;;
+        }
     }
 }
+
+// button
+.menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13%;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 0.5em;
+    background: white;
+    border: none;
+    transition: all .3s;
+  }
+  
+  .menuButton:active {
+    color: $grey-light;
+  }
+  
+  input[type = "checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .menuButton span {
+    width: 30px;
+    height: 4px;
+    background: rgb(200,200,200);
+    border-radius: 100px;
+    transition: 0.3s ease;
+  }
+  
+  input[type]:checked ~ span.top {
+    transform: translateY(290%)rotate(45deg);
+    width: 40px;
+  }
+  
+  input[type]:checked ~ span.bot {
+    transform: translateY(-270%) rotate(-45deg);
+    width: 40px;
+  }
+  
+  input[type]:checked ~ span.mid {
+    transform: translateX(-20px);
+    opacity: 0;
+  }

@@ -24,5 +24,10 @@
     </div>
 </div>
 <div class="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-    <button (click)="toggleNav()" class="btn">X</button>
+    <label class="menuButton" for="check">
+        <input type="checkbox" id="check"  (click)="toggleNav()">
+        <span class="top"></span>
+        <span class="mid"></span>
+        <span class="bot"></span>
+    </label>
 </div>

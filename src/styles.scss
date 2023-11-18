@@ -1,6 +1,7 @@
 @import './assets/animate.scss';
 @import './assets/variables';
 
+// global Styles
 html,
 button,
 input,
@@ -27,47 +28,31 @@ a:hover {
     line-height: 1;
 }
 
-h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
-}
-
-// Global Styles
-p {
-    color: $grey-light;
-    word-spacing: 1px;
-    line-height: 25px;
-    font-size: 14px;
-}
-
-h2 {
-    font-size: 15px;
-    color: $grey-dark;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-/* For mobile phones: */
-@media only screen and (max-width: 500px) {
-    h2 {
-        font-size: 18px;
-    }
-}
-
-h2::after {
-    content: " ";
-    border: solid 2px $green-light;
-    display: block;
-    width: 35px;
-    margin: 25px auto;
-}
-
 .section-padding {
     padding: 50px 0 100px
 }
 
+// global fonts styles
+p {
+    color: $grey-light;
+    word-spacing: 1px;
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+    p {
+        padding-top: 10px;
+        margin-bottom: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
 .h1-arrow {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     color: $grey-dark;
     letter-spacing: 1px;
@@ -80,5 +65,36 @@ h2::after {
 @media only screen and (max-width: 500px) {
     .h1-arrow {
         font-size: 20px;
+    }
+}
+
+h2 {
+    font-size: 18px;
+    color: $grey-dark;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2::after {
+    content: " ";
+    border: solid 2px $green-light;
+    display: block;
+    width: 35px;
+    margin: 25px auto;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $grey-dark;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+    h3 {
+        padding-top: 10px;
     }
 }
