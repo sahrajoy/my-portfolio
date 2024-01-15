@@ -1,1 +1,1 @@
-{"version":3,"sources":["about.component.scss","../../assets/_variables.scss","about.component.css"],"names":[],"mappings":"AAEA;EACI,mBCIW;ACLf;AFEI;EACI,gBAAA;AEAR","file":"about.component.css"}
+{"version":3,"sources":["about.component.scss","../../assets/_variables.scss","about.component.css"],"names":[],"mappings":"AAEA;EACI,mBCIW;ACLf;AFEI;EACI,gBAAA;AEAR;;AFIA,uBAAA;AACA;EACI;IACI,gBAAA;EEDN;AACF","file":"about.component.css"}

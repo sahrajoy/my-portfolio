@@ -21,7 +21,7 @@
 .send-mail-btn {
   text-decoration: none;
   background: #70c93d;
-  padding: 20px 40px;
+  padding: 15px 30px;
   border-radius: 5px;
   color: #fff;
   text-transform: uppercase;
@@ -34,6 +34,17 @@
 
 .send-mail-btn:hover,
 .send-mail-btn:focus {
-  background: #94d76e;
+  background: #8ad85d;
   color: #fff;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+  .hero {
+    background: url("../../assets/hero-bg-small.png") no-repeat center center;
+    background-size: cover;
+  }
+  .send-mail-btn {
+    padding: 10px 20px;
+  }
 }/*# sourceMappingURL=home.component.css.map */

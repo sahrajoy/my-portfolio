@@ -39,10 +39,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: fadeInDown;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 html,
 button,
 input,
@@ -69,21 +65,46 @@ a:hover {
   line-height: 1;
 }
 
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
+.section-padding {
+  padding: 50px 0 100px;
 }
 
 p {
   color: #8c9398;
   word-spacing: 1px;
   line-height: 25px;
-  font-size: 14px;
+  font-size: 18px;
+  margin-bottom: 2px;
 }
 
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+  p {
+    padding-top: 10px;
+    margin-bottom: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+}
+.h1-arrow {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #646464;
+  letter-spacing: 1px;
+  background: url("./assets/h1-bg.png") no-repeat center bottom;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+  .h1-arrow {
+    font-size: 20px;
+  }
+}
 h2 {
-  font-size: 15px;
-  color: #353535;
+  font-size: 18px;
+  color: #646464;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -96,16 +117,18 @@ h2::after {
   margin: 25px auto;
 }
 
-.section-padding {
-  padding: 90px 0 100px;
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #646464;
+  letter-spacing: 1px;
+  padding-bottom: 7px;
+  font-weight: bold;
 }
 
-.h1-arrow {
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #353535;
-  letter-spacing: 1px;
-  background: url("./assets/h1-bg.png") no-repeat center bottom;
-  padding-bottom: 30px;
-  font-weight: bold;
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+  h3 {
+    padding-top: 10px;
+  }
 }/*# sourceMappingURL=styles.css.map */

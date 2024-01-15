@@ -1,1 +1,72 @@
-/*# sourceMappingURL=navbar.component.css.map */
+.btn {
+  float: right;
+}
+
+#nav {
+  background-color: #646464;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-out, opacity 1s ease-out, padding 0.5s ease-in;
+}
+#nav.visible {
+  max-height: 500px;
+  opacity: 1;
+  padding: 12px;
+}
+#nav .nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav .nav-item hr {
+  margin: 3px 0;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 0.5em;
+  background: white;
+  border: none;
+  transition: all 0.3s;
+}
+
+.menuButton:active {
+  color: #8c9398;
+}
+
+input[type=checkbox] {
+  display: none;
+  visibility: hidden;
+}
+
+.menuButton span {
+  width: 30px;
+  height: 4px;
+  background: rgb(200, 200, 200);
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+input[type]:checked ~ span.top {
+  transform: translateY(290%) rotate(45deg);
+  width: 40px;
+}
+
+input[type]:checked ~ span.bot {
+  transform: translateY(-270%) rotate(-45deg);
+  width: 40px;
+}
+
+input[type]:checked ~ span.mid {
+  transform: translateX(-20px);
+  opacity: 0;
+}/*# sourceMappingURL=navbar.component.css.map */

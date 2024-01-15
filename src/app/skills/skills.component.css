@@ -20,4 +20,11 @@
 }
 .row .p-b .icon .fa {
   text-shadow: rgb(100, 172, 54) 1px 1px, rgb(100, 172, 54) 2px 2px, rgb(100, 172, 50) 3px 3px, rgb(100, 172, 54) 4px 4px, rgb(100, 172, 54) 5px 5px, rgb(100, 172, 54) 6px 6px, rgb(100, 172, 54) 7px 7px, rgb(100, 172, 54) 8px 8px, rgb(100, 172, 54) 9px 9px, rgb(100, 172, 55) 10px 10px, rgb(100, 172, 56) 11px 11px, rgb(100, 172, 57) 12px 12px, rgb(100, 172, 58) 13px 13px, rgb(100, 172, 59) 14px 14px, rgb(100, 172, 60) 15px 15px, rgb(100, 172, 61) 16px 16px, rgb(100, 172, 62) 17px 17px, rgb(100, 172, 63) 18px 18px, rgb(100, 172, 64) 19px 19px, rgb(100, 172, 65) 20px 20px, rgb(100, 172, 66) 21px 21px, rgb(100, 172, 67) 22px 22px, rgb(100, 172, 68) 23px 23px, rgb(100, 172, 69) 24px 24px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+  .skills {
+    font-size: large;
+  }
 }/*# sourceMappingURL=skills.component.css.map */

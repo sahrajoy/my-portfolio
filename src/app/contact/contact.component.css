@@ -24,7 +24,7 @@
 #contact .up-btn:hover,
 #contact .up-btn:focus {
   color: #fff;
-  background: #94d76e;
+  background: #8ad85d;
 }
 #contact .contact-details {
   margin: 50px 0;
@@ -32,6 +32,7 @@
 #contact .contact-details .light-box {
   background-color: #fff;
   padding: 20px 0;
+  margin-bottom: 15px;
   transition: all 500ms ease-in-out;
 }
 #contact .contact-details .light-box h2 {
@@ -50,10 +51,26 @@
   color: #8c9398;
   word-spacing: 1px;
   line-height: 25px;
-  font-size: 14px;
 }
 #contact .contact-details .light-box:hover,
 #contact .contact-details .light-box:focus {
   box-shadow: 0px 3px 0px 0px #70c93d;
   transform: translate(0, -15px);
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+  i {
+    font-size: 25px;
+  }
+  i span {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  p {
+    font-size: medium;
+  }
+  p a {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=contact.component.css.map */
